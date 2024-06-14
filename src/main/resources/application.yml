@@ -12,6 +12,10 @@ spring:
     username: root
     password: MFNEXlKgHbJMOgBtJxXhURjMrhOrAoxk
     driver-class-name: com.mysql.cj.jdbc.Driver
+#      url: jdbc:mysql://localhost/drcomputer
+#      username: root
+#      password:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
   mail:
     host: smtp.gmail.com
     username: hung.290502@gmail.com
@@ -34,4 +38,3 @@ cloudinary:
   cloud-name: dlhjzufdj
   api-key: 344655146293534
   api-secret: ZX6B1Vdw7hGiqRnewuJk0soiygw
-

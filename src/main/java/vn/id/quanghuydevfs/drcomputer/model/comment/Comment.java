@@ -2,6 +2,7 @@ package vn.id.quanghuydevfs.drcomputer.model.comment;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import vn.id.quanghuydevfs.drcomputer.model.product.Product;
@@ -12,7 +13,8 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Entity
+@Entity(name = "comment")
+@Builder
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,8 +24,10 @@ public class Comment {
     private String image;
     private LocalDateTime time = LocalDateTime.now();
 
+
     @ManyToOne
     private Comment comment;
+
 
     @ManyToOne
     @JoinColumn(name = "product_id")
