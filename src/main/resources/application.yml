@@ -8,9 +8,9 @@ spring:
         globally_quoted_identifiers: true
         dialect: org.hibernate.dialect.MySQLDialect
   datasource:
-    url: jdbc:mysql://localhost/drcomputer
+    url: jdbc:mysql://roundhouse.proxy.rlwy.net/laptop
     username: root
-    password:
+    password: MFNEXlKgHbJMOgBtJxXhURjMrhOrAoxk
     driver-class-name: com.mysql.cj.jdbc.Driver
   mail:
     host: smtp.gmail.com
